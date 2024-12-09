@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care. - Simplifiez vos démarches</title>
+    <style>
+        /* Style Global */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            background-color: #0a0a1c;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #001f3f, #003366);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 1rem 0 2rem;
+        }
+        .btn {
+            background: #007BFF;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 123, 255, 0.6);
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #007BFF;
+        }
+        section p {
+            font-size: 1rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        .services {
+            background: #0e0e2a;
+            color: white;
+        }
+        .services .card {
+            display: inline-block;
+            background: #001f3f;
+            margin: 1rem;
+            padding: 2rem;
+            width: 280px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .services .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+        .services .card img {
+            width: 60px;
+            margin-bottom: 1rem;
+        }
+        .services .card h3 {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            color: #007BFF;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #003366, #001f3f);
+        }
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #0e0e2a;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .contact label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+            font-weight: bold;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+            background: #001f3f;
+            color: white;
+        }
+        .contact button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .contact button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.6);
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a1c;
+            text-align: center;
+            padding: 2rem;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Care.</h1>
+        <p>La solution innovante pour simplifier vos démarches administratives.</p>
+        <a href="#contact" class="btn">Contactez-nous</a>
+    </header>
+
+    <!-- À propos -->
+    <section>
+        <h2>Qui sommes-nous ?</h2>
+        <p>
+            Chez Care., nous sommes convaincus que la gestion de vos démarches administratives ne doit pas être un obstacle dans votre vie. 
+            Nous avons conçu une solution moderne et accessible pour répondre à tous vos besoins.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <h2>Nos Services</h2>
+        <div class="card">
+            <img src="https://via.placeholder.com/60" alt="Service 1">
+            <h3>Démarches Administratives</h3>
+            <p>CAF, sécurité sociale, retraite : laissez nos experts vous guider.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/60" alt="Service 2">
+            <h3>Changement de Fournisseurs</h3>
+            <p>Internet, électricité ou gaz : nous gérons tout pour vous.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/60" alt="Service 3">
+            <h3>Assistance Juridique</h3>
+            <p>Des avocats et juristes partenaires pour vous accompagner.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Care. Tous droits réservés. <a href="#">Mentions légales</a></p>
+    </footer>
+</body>
+</html>
